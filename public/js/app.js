@@ -1,7 +1,7 @@
 console.log('Client side js file loaded.')
 
 const address = (address) => {
-    fetch(`http://localhost:3000/weather?address=${address}`).then((response => {
+    fetch(`/weather?address=${address}`).then((response => {
     response.json().then((data) => {
         if(data.error){
             messageOne.textContent = 'Ooopppsss....'
